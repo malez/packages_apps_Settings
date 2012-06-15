@@ -3810,7 +3810,7 @@ found in the list of installed apps.</string>
     <string name="themes_title">Themes</string>
     
     <!-- trebuchet setting -->
-    <string name="launcher_settings_title">Launcher</string>
+    <string name="launcher_settings_title">Trebuchet</string>
     
     <!-- 7comp Settings -->
     <string name="seven_comp_settings_title">7comp Settings</string>
@@ -3819,7 +3819,7 @@ found in the list of installed apps.</string>
     <string name="rom_version">Rom version</string>
     
     <!-- Device specific -->
-    <string name="advanced_settings_title">Device specific</string>
+    <string name="advanced_settings_title">Device settings</string>
 
     <!-- Display | Backlight -->
 	<string name="backlight_title">Custom backlight settings</string>
