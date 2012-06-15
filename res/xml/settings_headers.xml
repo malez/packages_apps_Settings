@@ -59,21 +59,53 @@
     <!-- Quick Links -->
     <header android:title="@string/quick_links_title" />
 
+    <!-- Rom control -->
     <header android:icon="@drawable/ic_settings_rom_control"
             android:title="@string/rom_control_title">
         <intent
                 android:action="android.intent.action.MAIN"
                 android:targetClass="com.aokp.romcontrol.ROMControlActivity"
                 android:targetPackage="com.aokp.romcontrol" />
-    </header>
+     </header>
 
-    <header android:icon="@drawable/ic_settings_themes"
+    <!-- 7comp setting -->
+     <header android:icon="@drawable/ic_settings_seven_comp_settings"
+             android:title="@string/seven_comp_settings_title">
+               <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="malez.lcr.lcrsettings"
+                android:targetClass="malez.lcr.lcrsettings.LcrPreferences" />
+     </header>
+     
+     <!-- Thèmes -->
+     <header android:icon="@drawable/ic_settings_themes"
             android:title="@string/themes_title">
-        <intent
+               <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.tmobile.themechooser"
                 android:targetClass="com.tmobile.themechooser.ThemeChooser" />
-    </header>
+     </header>
+
+     <!-- Launcher -->
+     <header android:id="@+id/launcher_settings"
+          android:title="@string/launcher_settings_title"
+          android:icon="@drawable/ic_settings_cmlauncher">
+               <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.trebuchet"
+                android:targetClass="com.cyanogenmod.trebuchet.preference.Preferences" />
+     </header>
+    
+     <!-- Device specific -->
+     <header android:id="@+id/advanced_settings"
+            android:title="@string/advanced_settings_title"
+            android:icon="@drawable/ic_settings_advanced">
+               <intent
+                android:action="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS"
+                android:targetPackage="com.cyanogenmod.settings.device"
+                android:targetClass="com.cyanogenmod.settings.device.DeviceSettings" />
+     </header>
+
 
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />
